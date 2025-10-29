@@ -3,16 +3,17 @@ import Navbar from "../Navbar";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen w-full bg-[url('/home.jpg')] bg-cover bg-center bg-no-repeat md:px-[5%] px-[2%]">
+    <div className="relative w-full min-h-screen bg-[url('/home.jpg')] bg-cover bg-center bg-no-repeat">
       {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-b from-[#00000066] to-[#000000]" />
 
-      {/* Content */}
-      <div className="relative">
+      {/* Navbar */}
+      <div className="relative z-10">
         <Navbar />
       </div>
 
-      <div className="relative px-[5%] pt-[90%] md:pt-[10%] md:pl-[8%] flex flex-col gap-[30px]">
+      {/* Content */}
+      <div className="relative z-10 flex flex-col gap-[30px] px-[6%] md:pl-[8%] pt-[70%] sm:pt-[50%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
         <Typography
           sx={{
             fontSize: { xs: 32, sm: 40, md: 60, lg: 80 },
