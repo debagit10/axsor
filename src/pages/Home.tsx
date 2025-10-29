@@ -1,3 +1,4 @@
+import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 import Hero from "../components/home/Hero";
 import Leadership from "../components/Leadership";
@@ -14,6 +15,8 @@ const Home = () => {
       <Services />
 
       <Leadership />
+
+      <Blog />
 
       <Footer />
     </div>
