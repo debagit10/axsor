@@ -29,9 +29,9 @@ const Blog = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
-          <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative md:w-full w-[353px] h-[494px] md:h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-0 left-5">
+            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-10 left-5">
               <Typography
                 sx={{
                   fontSize: 20,
@@ -53,9 +53,9 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative md:w-full w-[353px] h-[494px] md:h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-0 left-5">
+            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-10 left-5">
               <Typography
                 sx={{
                   fontSize: 20,
@@ -77,9 +77,9 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative md:w-full w-[353px] h-[494px] md:h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-0 left-5">
+            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-10 left-5">
               <Typography
                 sx={{
                   fontSize: 24,
