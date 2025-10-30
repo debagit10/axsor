@@ -157,7 +157,7 @@ const Services = () => {
           <div className="w-[357px] h-[220px]">
             <Typography
               sx={{
-                fontSize: { xs: 14, sm: 16, md: 28 },
+                fontSize: 28,
                 fontWeight: 400,
                 color: "#666666",
               }}
@@ -168,7 +168,7 @@ const Services = () => {
           <div className="w-[357px] h-[220px]">
             <Typography
               sx={{
-                fontSize: { xs: 14, sm: 16, md: 28 },
+                fontSize: 28,
                 fontWeight: 400,
                 color: "#666666",
               }}
@@ -179,7 +179,7 @@ const Services = () => {
           <div className="w-[357px] h-[220px]">
             <Typography
               sx={{
-                fontSize: { xs: 14, sm: 16, md: 28 },
+                fontSize: 28,
                 fontWeight: 400,
                 color: "#666666",
               }}
@@ -190,7 +190,7 @@ const Services = () => {
           <div className="w-[357px] h-[220px]">
             <Typography
               sx={{
-                fontSize: { xs: 14, sm: 16, md: 28 },
+                fontSize: 28,
                 fontWeight: 400,
                 color: "#666666",
               }}
@@ -201,7 +201,7 @@ const Services = () => {
           <div className="w-[357px] h-[220px]">
             <Typography
               sx={{
-                fontSize: { xs: 14, sm: 16, md: 28 },
+                fontSize: 28,
                 fontWeight: 400,
                 color: "#666666",
               }}
@@ -213,7 +213,7 @@ const Services = () => {
           <div className="w-[357px] h-[220px]">
             <Typography
               sx={{
-                fontSize: { xs: 14, sm: 16, md: 28 },
+                fontSize: 28,
                 fontWeight: 400,
                 color: "#666666",
               }}
