@@ -7,6 +7,7 @@ import Services from "../components/Services";
 import Values from "../components/home/Values";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import About from "../components/About";
 
 const Home = () => {
   const location = useLocation();
@@ -23,6 +24,10 @@ const Home = () => {
   return (
     <div>
       <Hero />
+
+      <div id="about">
+        <About />
+      </div>
 
       <Values />
 
