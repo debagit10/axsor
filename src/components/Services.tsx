@@ -3,7 +3,7 @@ import exporticon from "../icons/export.png";
 import distribution from "../icons/distribution.png";
 import truck from "../icons/truck.png";
 
-const Services = () => {
+const Our_Services = () => {
   return (
     <div className="bg-[#000000] px-[6%] pt-[10%] md:pl-[8%]">
       <div className="md:px-[5%]">
@@ -126,4 +126,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Our_Services;
