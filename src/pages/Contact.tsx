@@ -27,7 +27,7 @@ const Contact = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: 20,
+              fontSize: 14,
               fontWeight: 400,
               color: "#666666",
               letterSpacing: "2.5%",
@@ -53,7 +53,7 @@ const Contact = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: 20,
+              fontSize: 14,
               fontWeight: 400,
               color: "#666666",
               letterSpacing: "2.5%",
@@ -77,17 +77,30 @@ const Contact = () => {
           >
             CHECK OUT OUR OFFICE
           </Typography>
-          <Typography
-            sx={{
-              fontSize: 20,
-              fontWeight: 400,
-              color: "#666666",
-              letterSpacing: "2.5%",
-              lineHeight: "170%",
-            }}
+          <a
+            href="https://www.google.com/maps?q=Office+No+409,+Plot+66+%2F+11,+Industrial+Area,+Tema"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline"
           >
-            Office No 409, Plot 66 / 11, Industrial Area ,Tema.
-          </Typography>
+            <Typography
+              sx={{
+                fontSize: 14,
+                fontWeight: 400,
+                color: "#6666E8",
+                textDecoration: "underline",
+                textDecorationColor: "#6666E8",
+                letterSpacing: "2.5%",
+                lineHeight: "170%",
+                transition: "opacity 0.3s ease",
+                "&:hover": {
+                  opacity: 0.8,
+                },
+              }}
+            >
+              Office No 409, Plot 66 / 11, Industrial Area, Tema.
+            </Typography>
+          </a>
         </div>
       </div>
 
@@ -218,7 +231,7 @@ const Contact = () => {
           }}
         ></div>
 
-        <div className="absolute md:rounded-[500px] rounded-[20px] p-5 mx-8 bg-[#0000003D] backdrop-blur-[32px] md:w-[415px] bottom-5 md:left-[35%] text-center z-10">
+        <div className="absolute md:rounded-[500px] rounded-[20px] p-5 mx-8 bg-[rgba(0,0,0,0.24)] backdrop-blur-[32px] md:w-[415px] bottom-5 md:left-[35%] text-center z-10">
           <Typography sx={{ color: "#ffffff", fontWeight: 400, fontSize: 16 }}>
             Office No 409, Plot 66 / 11, Industrial Area, Tema.
           </Typography>

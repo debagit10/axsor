@@ -29,9 +29,9 @@ const Blog = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8 justify-center ">
-          <div className="relative md:w-full w-[333px] h-[494px] md:h-[454px] border-[0.1px] border-[#787878] rounded-[20px] ">
+          <div className="relative md:w-full w-[333px] h-[494px] md:h-[454px] bg-[#00000005] rounded-[20px] ">
             <img />
-            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-10 left-5">
+            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-0 bg-[#00000006] p-4">
               <Typography
                 sx={{
                   fontSize: 20,
@@ -52,10 +52,9 @@ const Blog = () => {
               </Typography>
             </div>
           </div>
-
-          <div className="relative md:w-full w-[333px] h-[494px] md:h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative md:w-full w-[333px] h-[494px] md:h-[454px] bg-[#00000005] rounded-[20px] ">
             <img />
-            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-10 left-5">
+            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-0 bg-[#00000006] p-4">
               <Typography
                 sx={{
                   fontSize: 20,
@@ -63,7 +62,7 @@ const Blog = () => {
                   color: "#787878",
                 }}
               >
-                CEO Shares Insights on Energy Security at Industry Forum...
+                Axsor Energy Expands Distribution Network Across Ghana...
               </Typography>
               <Typography
                 sx={{
@@ -76,18 +75,17 @@ const Blog = () => {
               </Typography>
             </div>
           </div>
-
-          <div className="relative md:w-full w-[333px] h-[494px] md:h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative md:w-full w-[333px] h-[494px] md:h-[454px] bg-[#00000005] rounded-[20px] ">
             <img />
-            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-10 left-5">
+            <div className="rounded-2xl flex flex-col gap-7 absolute bottom-0 bg-[#00000006] p-4">
               <Typography
                 sx={{
-                  fontSize: 24,
+                  fontSize: 20,
                   fontWeight: 500,
                   color: "#787878",
                 }}
               >
-                New Partnership Strengthens Import Operations with Glo...
+                Axsor Energy Expands Distribution Network Across Ghana...
               </Typography>
               <Typography
                 sx={{

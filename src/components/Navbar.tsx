@@ -3,14 +3,20 @@ import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const route = location.pathname;
+
+  console.log(route);
 
   return (
-    <div className=" p-6 text-[#D3D2CE]">
+    <div className="px-[8%] py-6 text-[#D3D2CE]">
       <div className="flex  items-center justify-between ">
         <img
           src="/logo.png"
@@ -42,7 +48,7 @@ const Navbar = () => {
             <Typography
               fontSize={12}
               fontWeight={400}
-              color="#FFFFFF"
+              color={route === "/services" ? "#E8AF4B" : "#FFFFFF"}
               letterSpacing={3}
             >
               SERVICES
@@ -57,7 +63,7 @@ const Navbar = () => {
             <Typography
               fontSize={12}
               fontWeight={400}
-              color="#FFFFFF"
+              color={route === "/contact" ? "#E8AF4B" : "#FFFFFF"}
               letterSpacing={3}
             >
               CONTACT US

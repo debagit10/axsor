@@ -1,6 +1,9 @@
 import { Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#000000] pt-[10%] ">
       <div className="flex md:flex-row flex-col justify-between gap-12 px-[8%] py-[2%]">
@@ -64,14 +67,32 @@ const Footer = () => {
               color: "#787878",
             }}
           >
-            <span>Home</span> / <span>About</span> / <span>Contact Us</span>
+            <span onClick={() => navigate("/")} className="cursor-pointer">
+              Home
+            </span>{" "}
+            /{" "}
+            <span
+              onClick={() => navigate("/", { state: { scrollTo: "about" } })}
+              className="cursor-pointer"
+            >
+              About
+            </span>{" "}
+            /{" "}
+            <span
+              onClick={() => navigate("/contact")}
+              className="cursor-pointer"
+            >
+              Contact Us
+            </span>
           </Typography>
 
           <Typography
+            onClick={() => navigate("/", { state: { scrollTo: "careers" } })}
             sx={{
               fontSize: 12,
               fontWeight: 500,
               color: "#787878",
+              cursor: "pointer",
             }}
           >
             Careers

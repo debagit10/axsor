@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 
 const Leadership = () => {
   return (
-    <div className="bg-[] px-[6%] pt-[5%] md:pl-[8%]">
+    <div className="bg-[#F8F8F6] px-[6%] py-[5%] md:pl-[8%] ">
       <div className="md:px-[5%]">
         {/* Header */}
         <div className="flex flex-col gap-6">
@@ -17,7 +17,7 @@ const Leadership = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: 14, sm: 16, md: 20 },
+              fontSize: 16,
               fontWeight: 400,
               color: "#787878",
             }}
@@ -30,9 +30,9 @@ const Leadership = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
-          <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative w-full h-[454px] bg-[#00000006]  rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-5 left-5">
+            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 bg-[#ffffff] w-full p-4">
               <Typography
                 sx={{
                   fontSize: 24,
@@ -53,10 +53,9 @@ const Leadership = () => {
               </Typography>
             </div>
           </div>
-
-          <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative w-full h-[454px] bg-[#00000006]  rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-5 left-5">
+            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 bg-[#ffffff] w-full p-4">
               <Typography
                 sx={{
                   fontSize: 24,
@@ -77,10 +76,9 @@ const Leadership = () => {
               </Typography>
             </div>
           </div>
-
-          <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative w-full h-[454px] bg-[#00000006]  rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-5 left-5">
+            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 bg-[#ffffff] w-full p-4">
               <Typography
                 sx={{
                   fontSize: 24,
@@ -101,10 +99,9 @@ const Leadership = () => {
               </Typography>
             </div>
           </div>
-
-          <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
+          <div className="relative w-full h-[454px] bg-[#00000006]  rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-5 left-5">
+            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 bg-[#ffffff] w-full p-4">
               <Typography
                 sx={{
                   fontSize: 24,

@@ -8,6 +8,7 @@ import Values from "../components/home/Values";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import About from "../components/About";
+import quote from "../icons/quotes.png";
 
 const Home = () => {
   const location = useLocation();
@@ -38,7 +39,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-linear-to-t from-[#00000066] to-[#000000]" />
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col gap-3 px-[6%] md:pl-[8%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
+        <div className="relative z-10 flex flex-col gap-3 px-6 md:pl-[8%]  md:pt-[15%] lg:pt-[10%]  md:mx-0">
           <Typography
             sx={{
               fontSize: { xs: 10, md: 14 },
@@ -59,9 +60,15 @@ const Home = () => {
               lineHeight: "145%",
             }}
           >
-            We are committed to safety, environmental responsibility, and
-            contributing to the communities we serve.
+            We are committed to safety, <br className="hidden md:block" />{" "}
+            environmental responsibility, <br className="hidden md:block" /> and
+            contributing to the communities <br className="hidden md:block" />{" "}
+            we serve.
           </Typography>
+
+          <div className="absolute top-0 right-10 md:right-[40%] md:top-[30%]">
+            <img src={quote} className="md:w-[100px] md:h-[100px] w-12 h-12" />
+          </div>
         </div>
       </div>
 
@@ -71,12 +78,15 @@ const Home = () => {
         <Blog />
       </div>
 
-      <div className="relative flex flex-col justify-center w-full h-[770px] md:h-[418px] bg-[url('/footer.png')] bg-cover bg-center bg-no-repeat mt-[10%]">
+      <div
+        id="careers"
+        className="relative flex flex-col  w-full h-[418px] md:h-[770px] bg-[url('/footer.png')] bg-cover bg-center bg-no-repeat mt-[10%]"
+      >
         {/* Overlay */}
         <div className="absolute inset-0 bg-linear-to-b from-[#00000066] to-[#000000]" />
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col gap-3 px-[6%] md:pl-[8%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
+        <div className="relative z-10 flex flex-col gap-3 px-[6%] md:pl-[8%] pt-[15%] max-w-[1400px] ">
           <Typography
             sx={{
               fontSize: 14,
@@ -97,8 +107,10 @@ const Home = () => {
               lineHeight: "145%",
             }}
           >
-            Join a team fueling progress and shaping Ghana’s energy future. At
-            Axsor, we value professionalism, integrity, mutual respect and
+            Join a team fueling progress and shaping{" "}
+            <br className="hidden md:block" /> Ghana’s energy future. At Axsor,
+            we value <br className="hidden md:block" /> professionalism,
+            integrity, mutual respect <br className="hidden md:block" /> and
             teamwork.
           </Typography>
 
@@ -112,6 +124,8 @@ const Home = () => {
               backgroundColor: "#E8AF4B",
               border: "1px",
               borderColor: "#E8AF4B",
+              paddingX: { md: "28px", sm: "18px" },
+              paddingY: { md: "14px", sm: "10px" },
             }}
           >
             Check out Openings

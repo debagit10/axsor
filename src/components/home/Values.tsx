@@ -30,7 +30,7 @@ const Values = () => {
         {/* Values Section */}
         <div className="flex md:flex-row flex-col md:gap-10 gap-8 pt-12 md:pt-16">
           {/* Integrity */}
-          <div className="bg-[#121212] w-[257px] sm:w-[357px] lg:w-[357px] lg:h-[516px] h-[425px] md:w-full max-w-[357px] mx-auto md:mx-0 rounded-[20px] overflow-hidden relative transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+          <div className="bg-[#121212] w-[353px] lg:h-[516px] h-[425px] md:w-full max-w-[357px] mx-auto md:mx-0 rounded-[20px] overflow-hidden relative transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
             <div className="relative z-10 flex flex-col gap-4 sm:gap-6 p-[7%]">
               <Typography
                 sx={{
@@ -53,17 +53,27 @@ const Values = () => {
               </Typography>
             </div>
 
-            <img
-              src="/values/integrity.png"
-              alt="Integrity"
-              className="absolute top-[45%] h-[409px] object-cover left-1/2 -translate-x-1/2"
-            />
+            <div className="relative">
+              <img
+                src="/values/integrity.png"
+                alt="Integrity"
+                className="absolute top-[45%] h-[409px] object-cover left-1/2 -translate-x-1/2"
+              />
+
+              {/* Gradient overlay */}
+              <div
+                className="absolute top-[45%] left-1/2 -translate-x-1/2 h-[409px] w-full pointer-events-none"
+                style={{
+                  background: "linear-gradient(to bottom, #121212, #00000000)",
+                }}
+              ></div>
+            </div>
           </div>
 
           {/* Right Column */}
           <div className="flex flex-col gap-8 md:gap-10">
             {/* Professionalism */}
-            <div className="bg-[#121212] w-[257px] sm:w-[357px] relative overflow-hidden flex flex-col md:flex-row justify-between lg:h-[307px] h-[425px] md:w-full lg:max-w-[730px] max-w-[351px] mx-auto md:mx-0  rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+            <div className="bg-[#121212] w-[353px] relative overflow-hidden flex flex-col md:flex-row justify-between lg:h-[307px] h-[425px] md:w-full lg:max-w-[730px] max-w-[351px] mx-auto md:mx-0  rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
               <div className="flex flex-col lg:p-[4%] p-[7%] gap-4 sm:gap-6">
                 <Typography
                   sx={{
@@ -86,17 +96,27 @@ const Values = () => {
                 </Typography>
               </div>
 
-              <img
-                src="/values/professionalism.jpg"
-                alt="Professionalism"
-                className="lg:w-[200px] lg:h-[307px] w-full h-[300px] lg:scale-125"
-              />
+              <div className="relative w-full lg:w-[200px] lg:h-[307px] h-[300px] overflow-hidden">
+                <img
+                  src="/values/professionalism.jpg"
+                  alt="Professionalism"
+                  className="lg:w-[200px] lg:h-[307px] w-full h-[300px] lg:scale-125"
+                />
+
+                {/* Gradient overlay */}
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background: "linear-gradient(to right, #121212, #00000000)",
+                  }}
+                ></div>
+              </div>
             </div>
 
             {/* Bottom Cards */}
             <div className="flex flex-col md:flex-row gap-6 md:gap-8">
               {/* Mutual Respect */}
-              <div className="bg-[#121212] w-[257px] sm:w-[357px] relative overflow-hidden lg:w-[351px] lg:h-[516px] h-[425px] md:w-full max-w-[351px] mx-auto md:mx-0 rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+              <div className="bg-[#121212] w-[353px] relative overflow-hidden lg:w-[351px] lg:h-[516px] h-[425px] md:w-full max-w-[351px] mx-auto md:mx-0 rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
                 <div className="flex flex-col gap-4 sm:gap-6 p-[7%] pb-4">
                   <Typography
                     sx={{
@@ -120,15 +140,26 @@ const Values = () => {
                   </Typography>
                 </div>
 
-                <img
-                  src="/values/respect.jpg"
-                  alt="Mutual Respect"
-                  className="absolute bottom-0 left-0 w-full object-cover"
-                />
+                <div className="relative w-full h-[400px] overflow-hidden">
+                  <img
+                    src="/values/teamwork.jpg"
+                    alt="Mutual Respect"
+                    className="absolute bottom-0 left-0 w-full h-full object-cover"
+                  />
+
+                  {/* Gradient overlay */}
+                  <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, #121212, #00000000)",
+                    }}
+                  ></div>
+                </div>
               </div>
 
               {/* Teamwork */}
-              <div className="bg-[#121212] w-[257px] sm:w-[357px] relative overflow-hidden lg:w-[351px] lg:h-[516px] h-[425px] md:w-full max-w-[351px] mx-auto md:mx-0 rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+              <div className="bg-[#121212] w-[353px] relative overflow-hidden lg:w-[351px] lg:h-[516px] h-[425px] md:w-full max-w-[351px] mx-auto md:mx-0 rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
                 <div className="flex flex-col gap-4 sm:gap-6 p-[7%]">
                   <Typography
                     sx={{
@@ -151,11 +182,22 @@ const Values = () => {
                   </Typography>
                 </div>
 
-                <img
-                  src="/values/teamwork.jpg"
-                  alt="Teamwork"
-                  className="absolute bottom-0 left-0 w-full h-[260px] object-cover"
-                />
+                <div className="relative w-full h-[400px] overflow-hidden">
+                  <img
+                    src="/values/respect.jpg"
+                    alt="Mutual Respect"
+                    className="absolute bottom-0 left-0 w-full h-full object-cover"
+                  />
+
+                  {/* Gradient overlay */}
+                  <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, #121212, #00000000)",
+                    }}
+                  ></div>
+                </div>
               </div>
             </div>
           </div>

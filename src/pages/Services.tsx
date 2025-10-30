@@ -10,7 +10,7 @@ const Services = () => {
 
       <Our_Services />
 
-      <div className="bg-[#ffffff]">
+      <div className="bg-[#F9F9F9]">
         <div className="relative z-10 flex flex-col gap-3 px-[6%] md:pl-[8%] pt-[10%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
           <div className="flex flex-col gap-6">
             <Typography
@@ -35,9 +35,9 @@ const Services = () => {
             </Typography>
           </div>
 
-          <div className="flex gap-6 flex-col md:flex-row pt-12 md:pt-16 ">
-            <div className="relative bg-[#F9F9F9] rounded-[20px] w-[257px] sm:w-[357px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
-              <div className="rounded-[50%] bg-[#ffffff] w-11 h-11 text-center pt-[2%]">
+          <div className="flex gap-6 flex-col md:flex-row py-12 md:py-16 ">
+            <div className="relative bg-[#00000006] rounded-[20px] w-[353px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
+              <div className="rounded-[50%] bg-[#00000008] w-11 h-11 text-center pt-[2%]">
                 1
               </div>
 
@@ -66,8 +66,8 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="relative bg-[#F9F9F9] rounded-[20px] w-[257px] sm:w-[357px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
-              <div className="rounded-[50%] bg-[#ffffff] w-11 h-11 text-center pt-[2%]">
+            <div className="relative bg-[#00000006] rounded-[20px] w-[353px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
+              <div className="rounded-[50%] bg-[#00000008] w-11 h-11 text-center pt-[2%]">
                 2
               </div>
 
@@ -96,8 +96,8 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="relative bg-[#F9F9F9] rounded-[20px] w-[257px] sm:w-[357px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
-              <div className="rounded-[50%] bg-[#ffffff] w-11 h-11 text-center pt-[2%]">
+            <div className="relative bg-[#00000006] rounded-[20px] w-[353px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
+              <div className="rounded-[50%] bg-[#00000008] w-11 h-11 text-center pt-[2%]">
                 3
               </div>
 

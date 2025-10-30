@@ -31,7 +31,7 @@ const Our_Services = () => {
         </div>
 
         <div className="flex gap-6 flex-col md:flex-row pt-12 md:pt-16">
-          <div className="relative rounded-[20px] w-[257px] sm:w-[357px] md:h-[450px] h-[350px] bg-[#121212] md:p-[3%] p-[5%] mx-auto md:mx-0">
+          <div className="relative rounded-[20px] w-[353px]  md:h-[450px] h-[350px] bg-[#121212] md:p-[3%] p-[5%] mx-auto md:mx-0">
             <img
               src={exporticon}
               alt="Bulk Importing"
@@ -63,7 +63,7 @@ const Our_Services = () => {
             </div>
           </div>
 
-          <div className="relative rounded-[20px] w-[257px] sm:w-[357px] md:h-[450px] h-[350px] bg-[#121212] mx-auto md:mx-0 md:p-[3%] md:mt-[7%] p-[5%]">
+          <div className="relative rounded-[20px] w-[353px] md:h-[450px] h-[350px] bg-[#121212] mx-auto md:mx-0 md:p-[3%] md:mt-[7%] p-[5%]">
             <img
               src={distribution}
               alt="Fuel Distribution"
@@ -94,7 +94,7 @@ const Our_Services = () => {
             </div>
           </div>
 
-          <div className="relative rounded-[20px] w-[257px] sm:w-[357px] md:h-[450px] h-[350px] bg-[#121212] mx-auto md:mx-0 md:p-[3%] md:mt-[14%] p-[5%]">
+          <div className="relative rounded-[20px] w-[353px] md:h-[450px] h-[350px] bg-[#121212] mx-auto md:mx-0 md:p-[3%] md:mt-[14%] p-[5%]">
             <img src={truck} alt="Energy Exporting" className="rounded-[50%]" />
 
             <div className="absolute flex flex-col gap-6 pt-[30%] md:bottom-20 bottom-10">
