@@ -208,7 +208,7 @@ const Contact = () => {
           loading="lazy"
           allowFullScreen
           className="border-0 absolute inset-0 w-full h-full"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0862417291443!2d-122.41941508468172!3d37.77492977975915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b1c4e1a05%3A0xb86dbb91d5b9622b!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1702222222222"
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127055.44760791256!2d-0.17009232244632225!3d5.643067540502715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOffice%20No%20409%2C%20Plot%2066%20%2F%2011%2C%20Industrial%20Area%20%2CTema.!5e0!3m2!1sen!2sng!4v1761840513361!5m2!1sen!2sng"
         ></iframe>
 
         <div
@@ -220,7 +220,7 @@ const Contact = () => {
 
         <div className="absolute md:rounded-[500px] rounded-[20px] p-5 mx-8 bg-[#0000003D] backdrop-blur-[32px] md:w-[415px] bottom-5 md:left-[35%] text-center z-10">
           <Typography sx={{ color: "#ffffff", fontWeight: 400, fontSize: 16 }}>
-            Office No 409, Plot 66 / 11, Industrial Area ,Tema.
+            Office No 409, Plot 66 / 11, Industrial Area, Tema.
           </Typography>
         </div>
       </div>
