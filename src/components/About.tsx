@@ -92,7 +92,7 @@ const About = () => {
                 sx={{
                   fontSize: { xs: 16, md: 32 },
                   fontWeight: 400,
-                  color: "#737373",
+                  color: activeIndex === i ? "white" : "#737373",
                   letterSpacing: "-2.5%",
                   lineHeight: "180%",
                 }}

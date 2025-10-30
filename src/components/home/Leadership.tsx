@@ -32,7 +32,7 @@ const Leadership = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
           <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 left-5">
+            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-5 left-5">
               <Typography
                 sx={{
                   fontSize: 24,
@@ -44,7 +44,7 @@ const Leadership = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: 24,
+                  fontSize: 14,
                   fontWeight: 400,
                   color: "#000000",
                 }}
@@ -56,7 +56,7 @@ const Leadership = () => {
 
           <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 left-5">
+            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-5 left-5">
               <Typography
                 sx={{
                   fontSize: 24,
@@ -68,7 +68,7 @@ const Leadership = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: 24,
+                  fontSize: 14,
                   fontWeight: 400,
                   color: "#000000",
                 }}
@@ -80,7 +80,7 @@ const Leadership = () => {
 
           <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 left-5">
+            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-5 left-5">
               <Typography
                 sx={{
                   fontSize: 24,
@@ -92,7 +92,7 @@ const Leadership = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: 24,
+                  fontSize: 14,
                   fontWeight: 400,
                   color: "#000000",
                 }}
@@ -104,7 +104,7 @@ const Leadership = () => {
 
           <div className="relative w-full h-[454px] border-[0.1px] border-[#787878] rounded-[20px]">
             <img />
-            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 left-5">
+            <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-5 left-5">
               <Typography
                 sx={{
                   fontSize: 24,
@@ -116,7 +116,7 @@ const Leadership = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: 24,
+                  fontSize: 14,
                   fontWeight: 400,
                   color: "#000000",
                 }}

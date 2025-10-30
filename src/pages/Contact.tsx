@@ -195,6 +195,36 @@ const Contact = () => {
         </div>
       </div>
 
+      <div
+        className="relative h-[500px]"
+        style={{
+          background: `linear-gradient(to bottom right, #0F0F0F00, #0B0B0B75, #070707A4, #000000)`,
+        }}
+      >
+        <iframe
+          title="Brand Location"
+          width="100%"
+          height="100%"
+          loading="lazy"
+          allowFullScreen
+          className="border-0 absolute inset-0 w-full h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0862417291443!2d-122.41941508468172!3d37.77492977975915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b1c4e1a05%3A0xb86dbb91d5b9622b!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1702222222222"
+        ></iframe>
+
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: `linear-gradient(to bottom left, #0F0F0F00, #0B0B0B75, #070707A4)`,
+          }}
+        ></div>
+
+        <div className="absolute md:rounded-[500px] rounded-[20px] p-5 mx-8 bg-[#0000003D] backdrop-blur-[32px] md:w-[415px] bottom-5 md:left-[35%] text-center z-10">
+          <Typography sx={{ color: "#ffffff", fontWeight: 400, fontSize: 16 }}>
+            Office No 409, Plot 66 / 11, Industrial Area ,Tema.
+          </Typography>
+        </div>
+      </div>
+
       <div className="pb-12">
         <Blog />
       </div>
