@@ -63,7 +63,7 @@ const Leadership = () => {
                   color: "#787878",
                 }}
               >
-                John Kojo Arkorful
+                David Addo-Ashong
               </Typography>
               <Typography
                 sx={{
@@ -72,7 +72,7 @@ const Leadership = () => {
                   color: "#000000",
                 }}
               >
-                CHAIRMAN
+                DIRECTOR
               </Typography>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Leadership = () => {
                   color: "#787878",
                 }}
               >
-                John Kojo Arkorful
+                Kwasi Yirenkyi
               </Typography>
               <Typography
                 sx={{
@@ -95,7 +95,7 @@ const Leadership = () => {
                   color: "#000000",
                 }}
               >
-                CHAIRMAN
+                DIRECTOR
               </Typography>
             </div>
           </div>
@@ -109,7 +109,7 @@ const Leadership = () => {
                   color: "#787878",
                 }}
               >
-                John Kojo Arkorful
+                Micheal Addotey Addo
               </Typography>
               <Typography
                 sx={{
@@ -118,7 +118,7 @@ const Leadership = () => {
                   color: "#000000",
                 }}
               >
-                CHAIRMAN
+                CEO & DIRECTOR
               </Typography>
             </div>
           </div>
