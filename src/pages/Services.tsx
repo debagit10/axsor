@@ -257,7 +257,7 @@ const Services = () => {
       </div>
 
       <div className="bg-[#000000]">
-        <div className="relative z-10 flex flex-col gap-3 px-[6%] md:pl-[8%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
+        <div className="relative z-10 flex flex-col gap-3 px-[6%] md:pl-[8%] pt-[10%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
           <Typography
             sx={{
               fontSize: 14,
