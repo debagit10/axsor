@@ -5,8 +5,21 @@ import Hero from "../components/home/Hero";
 import Leadership from "../components/home/Leadership";
 import Services from "../components/Services";
 import Values from "../components/home/Values";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const section = document.getElementById(location.state.scrollTo);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <div>
       <Hero />
@@ -49,7 +62,9 @@ const Home = () => {
 
       <Leadership />
 
-      <Blog />
+      <div id="blog">
+        <Blog />
+      </div>
 
       <div className="relative flex flex-col justify-center w-full h-[770px] md:h-[418px] bg-[url('/footer.png')] bg-cover bg-center bg-no-repeat mt-[10%]">
         {/* Overlay */}
