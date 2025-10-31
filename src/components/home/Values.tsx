@@ -30,7 +30,7 @@ const Values = () => {
         {/* Values Section */}
         <div className="flex md:flex-row flex-col md:gap-10 gap-8 pt-12 md:pt-16">
           {/* Integrity */}
-          <div className="bg-[#121212] w-[353px] lg:h-[516px] h-[425px] md:w-full max-w-[357px] mx-auto md:mx-0 rounded-[20px] overflow-hidden relative transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+          <div className="bg-[#121212] w-[340px] lg:h-[516px] h-[425px] md:w-full max-w-[357px] mx-auto md:mx-0 rounded-[20px] overflow-hidden relative transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
             <div className="relative z-10 flex flex-col gap-4 sm:gap-6 p-[7%]">
               <Typography
                 sx={{
@@ -73,7 +73,7 @@ const Values = () => {
           {/* Right Column */}
           <div className="flex flex-col gap-8 md:gap-10">
             {/* Professionalism */}
-            <div className="bg-[#121212] w-[353px] relative overflow-hidden flex flex-col md:flex-row justify-between lg:h-[307px] h-[425px] md:w-full lg:max-w-[730px] max-w-[351px] mx-auto md:mx-0  rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+            <div className="bg-[#121212] w-[340px] relative overflow-hidden flex flex-col md:flex-row justify-between lg:h-[307px] h-[425px] md:w-full lg:max-w-[730px] max-w-[353px]  mx-auto md:mx-0  rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
               <div className="flex flex-col lg:p-[4%] p-[7%] gap-4 sm:gap-6">
                 <Typography
                   sx={{
@@ -116,7 +116,7 @@ const Values = () => {
             {/* Bottom Cards */}
             <div className="flex flex-col md:flex-row gap-6 md:gap-8">
               {/* Mutual Respect */}
-              <div className="bg-[#121212] w-[353px] relative overflow-hidden lg:w-[351px] lg:h-[516px] h-[425px] md:w-full max-w-[351px] mx-auto md:mx-0 rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+              <div className="bg-[#121212] w-[340px] relative overflow-hidden lg:w-[351px] lg:h-[516px] h-[425px] md:w-full max-w-[351px] mx-auto md:mx-0 rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
                 <div className="flex flex-col gap-4 sm:gap-6 p-[7%] pb-4">
                   <Typography
                     sx={{
@@ -159,7 +159,7 @@ const Values = () => {
               </div>
 
               {/* Teamwork */}
-              <div className="bg-[#121212] w-[353px] relative overflow-hidden lg:w-[351px] lg:h-[516px] h-[425px] md:w-full max-w-[351px] mx-auto md:mx-0 rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+              <div className="bg-[#121212] w-[340px] sm:w-[320px] relative overflow-hidden lg:w-[351px] lg:h-[516px] h-[425px] md:w-full max-w-[351px] mx-auto md:mx-0 rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
                 <div className="flex flex-col gap-4 sm:gap-6 p-[7%]">
                   <Typography
                     sx={{

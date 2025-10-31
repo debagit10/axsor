@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Our_Services = () => {
   return (
-    <div className="bg-[#000000] px-[6%] pt-[10%] md:pl-[8%]">
+    <div className="bg-[#000000] px-[6%] py-[10%] md:pl-[8%]">
       <div className="md:px-[5%]">
         {/* Header */}
         <div className="flex flex-col gap-6">
@@ -65,7 +65,7 @@ const Our_Services = () => {
                 delay: card.delay,
                 ease: "easeOut",
               }}
-              className={`relative rounded-[20px] w-[353px] md:h-[450px] h-[350px] bg-[#121212] mx-auto md:mx-0 p-[5%] md:p-[3%] ${
+              className={`relative rounded-[20px] w-[340px] md:h-[450px] h-[350px] bg-[#121212] mx-auto md:mx-0 p-[5%] md:p-[3%] ${
                 i === 1 ? "md:mt-[7%]" : i === 2 ? "md:mt-[14%]" : ""
               }`}
             >
