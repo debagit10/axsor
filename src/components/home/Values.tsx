@@ -2,10 +2,10 @@ import { Typography } from "@mui/material";
 
 const Values = () => {
   return (
-    <div className="bg-[#000000] px-[6%] pt-[10%] md:pl-[8%]">
+    <div className="bg-[#000000] md:px-[6%] pt-[10%] md:pl-[8%]">
       <div className="md:px-[5%]">
         {/* Header */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 pl-[6%]">
           <Typography
             sx={{
               fontSize: { xs: 32, sm: 40, md: 64 },
