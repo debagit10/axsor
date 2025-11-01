@@ -1,9 +1,11 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import Services from "./pages/Services";
 import ScrollToTop from "./utils/ScrollToTop";
+import React from "react";
+
+const Contact = React.lazy(() => import("./pages/Contact"));
+const Services = React.lazy(() => import("./pages/Services"));
+const Home = React.lazy(() => import("./pages/Home"));
 
 function App() {
   return (
