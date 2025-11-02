@@ -4,6 +4,33 @@ import Footer from "../components/Footer";
 import Our_Services from "../components/Services";
 
 const Services = () => {
+  const steps = [
+    {
+      title: "Sourcing",
+      description:
+        "We specialise in sourcing / acquiring crude oil and finished products such as AGO, PMS, LPG etc from reputable local producers and international suppliers.",
+    },
+    {
+      title: "Distribution",
+      description:
+        "Using our nationwide logistics network we sell to responsible OMCs, industries, communities, and partners across Ghana ensuring safe and efficient transport and onward distribution.",
+    },
+    {
+      title: "Sustainability",
+      description:
+        "We operate with sustainability at our core, minimizing environmental impact while ensuring lasting, safe energy reliability.",
+    },
+  ];
+
+  const reasons = [
+    "Proven expertise in petroleum import and distribution.",
+    "Competitive pricing of quality petroleum products.",
+    "Total compliance with environmental and safety regulations.",
+    "Reliable partnerships built on excellence, trust and transparency.",
+    "We utilise advanced storage and monitoring systems for quality assurance.",
+    "Dedicated team committed to innovation and customer satisfaction.",
+  ];
+
   return (
     <div>
       <Hero />
@@ -35,96 +62,39 @@ const Services = () => {
             </Typography>
           </div>
 
-          <div className="flex gap-6 flex-col md:flex-row py-12 md:py-16 ">
-            <div className="relative bg-[#00000006] rounded-[20px] w-[353px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
-              <div className="rounded-[50%] bg-[#00000008] w-11 h-11 text-center pt-[2%]">
-                1
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8 py-12 md:py-16">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="relative bg-[#00000006] rounded-[20px] w-[353px] md:h-[450px] h-[350px] md:p-[5%] p-[5%] mx-auto"
+              >
+                <div className="rounded-full bg-[#00000008] w-11 h-11 flex items-center justify-center text-center">
+                  {index + 1}
+                </div>
+
+                <div className="absolute flex flex-col gap-6 pt-[30%] md:bottom-20 bottom-10">
+                  <Typography
+                    sx={{
+                      fontSize: { xs: 28, sm: 32, md: 36 },
+                      fontWeight: 400,
+                      color: "#000000",
+                    }}
+                  >
+                    {step.title}
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      fontSize: { xs: 14, sm: 15, md: 16 },
+                      fontWeight: 400,
+                      color: "#A8A4A4",
+                    }}
+                  >
+                    {step.description}
+                  </Typography>
+                </div>
               </div>
-
-              <div className="absolute flex flex-col gap-6 pt-[30%] md:bottom-20 bottom-10">
-                <Typography
-                  sx={{
-                    fontSize: { xs: 28, sm: 32, md: 36 },
-                    fontWeight: 400,
-                    color: "#000000",
-                  }}
-                >
-                  Sourcing
-                </Typography>
-
-                <Typography
-                  sx={{
-                    fontSize: { xs: 14, sm: 15, md: 16 },
-                    fontWeight: 400,
-                    color: "#A8A4A4",
-                  }}
-                >
-                  We specialise in sourcing / acquiring crude oil and finished
-                  products such as AGO, PMS, LPG etc from reputable local
-                  producers and international suppliers.
-                </Typography>
-              </div>
-            </div>
-
-            <div className="relative bg-[#00000006] rounded-[20px] w-[353px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
-              <div className="rounded-[50%] bg-[#00000008] w-11 h-11 text-center pt-[2%]">
-                2
-              </div>
-
-              <div className="absolute flex flex-col gap-6 pt-[30%] md:bottom-20 bottom-10">
-                <Typography
-                  sx={{
-                    fontSize: { xs: 28, sm: 32, md: 36 },
-                    fontWeight: 400,
-                    color: "#000000",
-                  }}
-                >
-                  Distribution
-                </Typography>
-
-                <Typography
-                  sx={{
-                    fontSize: { xs: 14, sm: 15, md: 16 },
-                    fontWeight: 400,
-                    color: "#A8A4A4",
-                  }}
-                >
-                  Using our nationwide logistics network we sell to responsible
-                  OMCs, industries, communities, and partners across Ghana
-                  ensuring safe and efficient transport and onward distribution.
-                </Typography>
-              </div>
-            </div>
-
-            <div className="relative bg-[#00000006] rounded-[20px] w-[353px] md:h-[450px] h-[350px] md:p-[3%] p-[5%] mx-auto md:mx-0">
-              <div className="rounded-[50%] bg-[#00000008] w-11 h-11 text-center pt-[2%]">
-                3
-              </div>
-
-              <div className="absolute flex flex-col gap-6 pt-[30%] md:bottom-20 bottom-10">
-                <Typography
-                  sx={{
-                    fontSize: { xs: 28, sm: 32, md: 36 },
-                    fontWeight: 400,
-                    color: "#000000",
-                  }}
-                >
-                  Sustainability
-                </Typography>
-
-                <Typography
-                  sx={{
-                    fontSize: { xs: 14, sm: 15, md: 16 },
-                    fontWeight: 400,
-                    color: "#A8A4A4",
-                  }}
-                >
-                  We operate with sustainability at our core, minimizing
-                  environmental impact while ensuring lasting, safe energy
-                  reliability.
-                </Typography>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -154,73 +124,23 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
-          <div className="w-[357px] h-[220px]">
-            <Typography
-              sx={{
-                fontSize: 28,
-                fontWeight: 400,
-                color: "#666666",
-              }}
+          {reasons.map((text, index) => (
+            <div
+              key={index}
+              className="bg-[#00000005] rounded-2xl p-6 flex items-center justify-center h-[220px]"
             >
-              Proven expertise in petroleum import and distribution.
-            </Typography>
-          </div>
-          <div className="w-[357px] h-[220px]">
-            <Typography
-              sx={{
-                fontSize: 28,
-                fontWeight: 400,
-                color: "#666666",
-              }}
-            >
-              Competitive pricing of quality petroleum products.
-            </Typography>
-          </div>
-          <div className="w-[357px] h-[220px]">
-            <Typography
-              sx={{
-                fontSize: 28,
-                fontWeight: 400,
-                color: "#666666",
-              }}
-            >
-              Total compliance with environmental and safety regulations.
-            </Typography>
-          </div>
-          <div className="w-[357px] h-[220px]">
-            <Typography
-              sx={{
-                fontSize: 28,
-                fontWeight: 400,
-                color: "#666666",
-              }}
-            >
-              Reliable partnerships built on excellence, trust and transparency.
-            </Typography>
-          </div>
-          <div className="w-[357px] h-[220px]">
-            <Typography
-              sx={{
-                fontSize: 28,
-                fontWeight: 400,
-                color: "#666666",
-              }}
-            >
-              We utilise advanced storage and monitoring systems for quality
-              assurance.
-            </Typography>
-          </div>
-          <div className="w-[357px] h-[220px]">
-            <Typography
-              sx={{
-                fontSize: 28,
-                fontWeight: 400,
-                color: "#666666",
-              }}
-            >
-              Dedicated team committed to innovation and customer satisfaction.
-            </Typography>
-          </div>
+              <Typography
+                sx={{
+                  fontSize: { xs: 22, sm: 24, md: 28 },
+                  fontWeight: 400,
+                  color: "#666666",
+                  textAlign: "center",
+                }}
+              >
+                {text}
+              </Typography>
+            </div>
+          ))}
         </div>
       </div>
 

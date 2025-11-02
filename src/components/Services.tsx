@@ -9,7 +9,7 @@ const Our_Services = () => {
     <div className="bg-[#000000] md:px-[6%] py-[10%] md:pl-[8%]">
       <div className="md:px-[5%]">
         {/* Header */}
-        <div className="flex flex-col gap-6 pl-[6%]">
+        <div className="flex flex-col gap-6 pl-[6%] md:pl-0">
           <Typography
             sx={{
               fontSize: { xs: 32, sm: 40, md: 64 },
