@@ -66,7 +66,7 @@ const Services = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="relative bg-[#00000006] rounded-[20px]  md:h-[450px] h-[350px] md:p-[5%] p-[5%] mx-auto"
+                className="relative bg-[#00000006] rounded-[20px] w-[353px] md:h-[450px] h-[350px] md:p-[5%] p-[5%] mx-auto"
               >
                 <div className="rounded-full bg-[#00000008] w-11 h-11 flex items-center justify-center text-center">
                   {index + 1}
