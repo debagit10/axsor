@@ -18,15 +18,15 @@ const LeadershipModal: React.FC<Leader> = ({ acf }) => {
   return (
     <div>
       <div
-        className="relative w-full h-[454px] bg-[#00000006] rounded-[20px]"
+        className="md:relative flex md:flex-col sm:gap-[5px] md:gap-0 w-full md:h-[454px] rounded-[20px]"
         onClick={() => setOpen(true)}
       >
         <img
           src={typeof acf.image === "object" ? acf.image.url : ""}
           alt={acf.name}
-          className="w-full h-full object-cover rounded-[20px]"
+          className="w-[199px] h-[215px] md:w-full md:h-full object-cover rounded-[20px] bg-[#00000006]"
         />
-        <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 bg-[#ffffff] w-full p-4">
+        <div className="rounded-2xl flex flex-col gap-3.5 md:absolute md:bottom-0 bg-[#ffffff] md:w-full p-4 w-36 h-[177px] md:h-[113px] mt-4 md:mt-0 ml-[5px] md:m-0">
           <Typography
             sx={{
               fontSize: 24,
@@ -52,7 +52,7 @@ const LeadershipModal: React.FC<Leader> = ({ acf }) => {
         open={open}
         onClose={() => setOpen(false)}
         PaperProps={{
-          className: "rounded-2xl md:p-4 w-[1069px] md:h-[744px] h-[350px]",
+          className: "rounded-2xl md:p-4 w-[1069px] md:h-[744px] h-[500px]",
         }}
         sx={{
           "& .MuiDialog-paper": {
@@ -68,10 +68,7 @@ const LeadershipModal: React.FC<Leader> = ({ acf }) => {
               onClick={() => setOpen(false)}
               className="justify-end flex py-2 cursor-pointer"
             >
-              <img
-                src={close}
-                className="md:w-[50px] md:h-[50px] w-[30px] md:h-[30px]"
-              />
+              <img src={close} className="md:w-[50px] md:h-[50px] w-[30px]" />
             </div>
 
             <div
@@ -83,7 +80,7 @@ const LeadershipModal: React.FC<Leader> = ({ acf }) => {
               <img
                 src={typeof acf.image === "object" ? acf.image.url : ""}
                 alt={acf.name}
-                className="w-full h-full object-cover rounded-[20px]"
+                className="h-[300px] w-full md:h-full object-cover rounded-[20px]"
               />
 
               <div className="absolute bottom-0 left-0 right-0 bg-white p-4 rounded-t-[20px]">
