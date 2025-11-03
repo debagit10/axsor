@@ -73,7 +73,7 @@ const Values = () => {
           {/* Right Column */}
           <div className="flex flex-col gap-8 md:gap-10">
             {/* Professionalism */}
-            <div className="bg-[#121212] w-[340px] relative overflow-hidden flex flex-col md:flex-row justify-between lg:h-[307px] h-[425px] md:w-full lg:max-w-[730px] max-w-[353px]  mx-auto md:mx-0  rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
+            <div className="bg-[#121212] w-[340px] relative overflow-hidden flex flex-col md:flex-row md:justify-between lg:h-[270px] h-[425px] md:w-full lg:max-w-[730px] max-w-[353px]  mx-auto md:mx-0  rounded-[20px] transition-all duration-300 hover:border-[0.5px] hover:border-[#BF9A17] hover:shadow-[0px_4px_100px_25px_#BF9A171F]">
               <div className="flex flex-col lg:p-[4%] p-[7%] gap-4 sm:gap-6">
                 <Typography
                   sx={{
@@ -96,11 +96,11 @@ const Values = () => {
                 </Typography>
               </div>
 
-              <div className="relative w-full lg:w-[200px] lg:h-[307px] h-[300px] overflow-hidden">
+              <div className="relative w-full md:w-[272px] lg:h-[307px] h-[254px] md:h-auto overflow-hidden shrink-0">
                 <img
                   src="/values/professionalism.jpg"
                   alt="Professionalism"
-                  className="lg:w-[200px] lg:h-[307px] w-full h-[300px] lg:scale-125"
+                  className="absolute object-cover bottom-[0%] md:bottom-[10%]"
                 />
 
                 {/* Gradient overlay */}
@@ -142,9 +142,9 @@ const Values = () => {
 
                 <div className="relative w-full h-[400px] overflow-hidden">
                   <img
-                    src="/values/teamwork.jpg"
+                    src="/values/respect.jpg"
                     alt="Mutual Respect"
-                    className="absolute bottom-0 left-0 w-full h-full object-cover"
+                    className="absolute object-cover h-[282px] md:bottom-[25%]"
                   />
 
                   {/* Gradient overlay */}
@@ -184,8 +184,8 @@ const Values = () => {
 
                 <div className="relative w-full h-[400px] overflow-hidden">
                   <img
-                    src="/values/respect.jpg"
-                    alt="Mutual Respect"
+                    src="/values/teamwork.jpg"
+                    alt="Teamwork"
                     className="absolute bottom-0 left-0 w-full h-full object-cover"
                   />
 
