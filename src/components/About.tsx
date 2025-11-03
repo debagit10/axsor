@@ -15,7 +15,7 @@ const About = () => {
           }
         });
       },
-      { root: null, threshold: 0.5 }
+      { root: null, threshold: 1 }
     );
 
     paragraphRefs.current.forEach((ref) => {
@@ -64,7 +64,7 @@ const About = () => {
         </div>
 
         {/* Right Section */}
-        <div className="md:w-2/3 space-y-8 md:space-y-40  scroll-smooth overflow-hidden">
+        <div className="md:w-2/3 space-y-[25%] md:space-y-[50%]  scroll-smooth overflow-hidden">
           {paragraphs.map((para, i) => (
             <div
               key={i}
