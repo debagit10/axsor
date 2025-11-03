@@ -17,7 +17,7 @@ const Leadership = () => {
 
   useEffect(() => {
     fetch(
-      "https://axsor-f6fd39.ingress-alpha.ewp.live/wp-json/wp/v2/leadership"
+      "https://axsor-f6fd39.ingress-alpha.ewp.live/wp-json/wp/v2/leadership?order=asc&orderby=date"
     )
       .then((res) => res.json())
       .then(async (data) => {
