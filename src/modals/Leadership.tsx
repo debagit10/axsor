@@ -1,24 +1,31 @@
 import { Dialog, DialogContent, Typography } from "@mui/material";
 import { useState } from "react";
-import logo from "../../public/logo.png";
 import close from "../icons/close.png";
 
-interface Leaders {
-  name: string;
-  role: string;
-  about: string;
+interface Leader {
+  id: number;
+  acf: {
+    name: string;
+    role: string;
+    about: string;
+    image: number | { id: number; url: string; alt: string };
+  };
 }
 
-const LeadershipModal: React.FC<Leaders> = ({ name, role, about }) => {
+const LeadershipModal: React.FC<Leader> = ({ acf }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <div>
       <div
-        className="relative w-full h-[454px] bg-[#00000006]  rounded-[20px]"
+        className="relative w-full h-[454px] bg-[#00000006] rounded-[20px]"
         onClick={() => setOpen(true)}
       >
-        <img />
+        <img
+          src={typeof acf.image === "object" ? acf.image.url : ""}
+          alt={acf.name}
+          className="w-full h-full object-cover rounded-[20px]"
+        />
         <div className="rounded-2xl flex flex-col gap-3.5 absolute bottom-0 bg-[#ffffff] w-full p-4">
           <Typography
             sx={{
@@ -27,7 +34,7 @@ const LeadershipModal: React.FC<Leaders> = ({ name, role, about }) => {
               color: "#787878",
             }}
           >
-            {name}
+            {acf.name}
           </Typography>
           <Typography
             sx={{
@@ -36,7 +43,7 @@ const LeadershipModal: React.FC<Leaders> = ({ name, role, about }) => {
               color: "#000000",
             }}
           >
-            {role}
+            {acf.role}
           </Typography>
         </div>
       </div>
@@ -45,7 +52,7 @@ const LeadershipModal: React.FC<Leaders> = ({ name, role, about }) => {
         open={open}
         onClose={() => setOpen(false)}
         PaperProps={{
-          className: "rounded-2xl md:p-4 w-[1069px] h-[744px]",
+          className: "rounded-2xl md:p-4 w-[1069px] md:h-[744px] h-[350px]",
         }}
         sx={{
           "& .MuiDialog-paper": {
@@ -63,7 +70,7 @@ const LeadershipModal: React.FC<Leaders> = ({ name, role, about }) => {
             >
               <img
                 src={close}
-                className="md:w-[50px] md:h-[50px] w-[30px] h-[30px]"
+                className="md:w-[50px] md:h-[50px] w-[30px] md:h-[30px]"
               />
             </div>
 
@@ -74,8 +81,8 @@ const LeadershipModal: React.FC<Leaders> = ({ name, role, about }) => {
               }}
             >
               <img
-                src={logo}
-                alt={name}
+                src={typeof acf.image === "object" ? acf.image.url : ""}
+                alt={acf.name}
                 className="w-full h-full object-cover rounded-[20px]"
               />
 
@@ -83,19 +90,19 @@ const LeadershipModal: React.FC<Leaders> = ({ name, role, about }) => {
                 <Typography
                   sx={{ fontSize: 24, fontWeight: 500, color: "#787878" }}
                 >
-                  {name}
+                  {acf.name}
                 </Typography>
                 <Typography
                   sx={{ fontSize: 14, fontWeight: 400, color: "#000000" }}
                 >
-                  {role}
+                  {acf.role}
                 </Typography>
               </div>
             </div>
 
             <div className="leading-relaxed text-gray-800">
               <Typography sx={{ fontSize: 15, lineHeight: 1.7 }}>
-                {about}
+                {acf.about}
               </Typography>
             </div>
 

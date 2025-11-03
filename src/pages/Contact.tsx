@@ -26,12 +26,18 @@ const Contact = () => {
             SEND US A MAIL
           </Typography>
           <Typography
+            component="a"
+            href="mailto:info@axsorenergy.com"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               fontSize: 14,
               fontWeight: 400,
               color: "#666666",
               letterSpacing: "2.5%",
               lineHeight: "170%",
+              textDecoration: "none",
+              "&:hover": { textDecoration: "underline", cursor: "pointer" },
             }}
           >
             info@axsorenergy.com
@@ -51,13 +57,18 @@ const Contact = () => {
           >
             PUT A CALL THROUGH
           </Typography>
+
           <Typography
+            component="a"
+            href="tel:+233264930920"
             sx={{
               fontSize: 14,
               fontWeight: 400,
               color: "#666666",
               letterSpacing: "2.5%",
               lineHeight: "170%",
+              textDecoration: "none",
+              "&:hover": { textDecoration: "underline", cursor: "pointer" },
             }}
           >
             (+233) 026 493 0920
@@ -78,7 +89,7 @@ const Contact = () => {
             CHECK OUT OUR OFFICE
           </Typography>
           <a
-            href="https://www.google.com/maps?q=Office+No+409,+Plot+66+%2F+11,+Industrial+Area,+Tema"
+            href="https://maps.app.goo.gl/1mjMQZ7TCbeCun8s9?g_st=ipc"
             target="_blank"
             rel="noopener noreferrer"
             className="no-underline"
@@ -221,7 +232,7 @@ const Contact = () => {
           loading="lazy"
           allowFullScreen
           className="border-0 absolute inset-0 w-full h-full"
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127055.44760791256!2d-0.17009232244632225!3d5.643067540502715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOffice%20No%20409%2C%20Plot%2066%20%2F%2011%2C%20Industrial%20Area%20%2CTema.!5e0!3m2!1sen!2sng!4v1761840513361!5m2!1sen!2sng"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.3683605662154!2d0.0164291!3d5.6597469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10207fd79c50ae77%3A0x785610c3083f47e5!2sSentuo%20Oil%20Refinery%20Limited!5e0!3m2!1sen!2sng!4v1762165332523!5m2!1sen!2sng"
         ></iframe>
 
         <div

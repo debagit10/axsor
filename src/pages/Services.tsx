@@ -2,6 +2,14 @@ import { Button, Typography } from "@mui/material";
 import Hero from "../components/services/Hero";
 import Footer from "../components/Footer";
 import Our_Services from "../components/Services";
+import { useEffect, useState } from "react";
+
+interface Reason {
+  id: number;
+  acf: {
+    reason: string;
+  };
+}
 
 const Services = () => {
   const steps = [
@@ -22,14 +30,15 @@ const Services = () => {
     },
   ];
 
-  const reasons = [
-    "Proven expertise in petroleum import and distribution.",
-    "Competitive pricing of quality petroleum products.",
-    "Total compliance with environmental and safety regulations.",
-    "Reliable partnerships built on excellence, trust and transparency.",
-    "We utilise advanced storage and monitoring systems for quality assurance.",
-    "Dedicated team committed to innovation and customer satisfaction.",
-  ];
+  const [reasons, setReasons] = useState<Reason[]>([]);
+
+  useEffect(() => {
+    fetch(
+      "https://axsor-f6fd39.ingress-alpha.ewp.live/wp-json/wp/v2/why-choose-axsor"
+    )
+      .then((res) => res.json())
+      .then((data) => setReasons(data));
+  }, []);
 
   return (
     <div>
@@ -124,7 +133,7 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
-          {reasons.map((text, index) => (
+          {reasons.map((reason, index) => (
             <div
               key={index}
               className="bg-[#00000005] rounded-2xl p-6 flex items-center justify-center h-[220px]"
@@ -137,7 +146,7 @@ const Services = () => {
                   textAlign: "center",
                 }}
               >
-                {text}
+                {reason.acf.reason}
               </Typography>
             </div>
           ))}
@@ -203,6 +212,10 @@ const Services = () => {
           </Typography>
 
           <Button
+            component="a"
+            href="mailto:info@axsorenergy.com"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               marginTop: "1rem",
               width: "203px",
@@ -210,8 +223,10 @@ const Services = () => {
               borderRadius: "64px",
               textTransform: "capitalize",
               backgroundColor: "#E8AF4B",
-              border: "1px",
-              borderColor: "#E8AF4B",
+              border: "1px solid #E8AF4B",
+              "&:hover": {
+                backgroundColor: "#d89b3f",
+              },
             }}
           >
             Get In Touch

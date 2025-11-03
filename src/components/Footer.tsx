@@ -19,13 +19,19 @@ const Footer = () => {
           </Typography>
 
           <Typography
+            component="a"
+            href="mailto:info@axsorenergy.com"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               fontSize: 12,
               fontWeight: 500,
               color: "#787878",
+              textDecoration: "none",
+              "&:hover": { textDecoration: "underline", cursor: "pointer" },
             }}
           >
-            info@axsor.com
+            info@axsorenergy.com
           </Typography>
 
           <Typography
@@ -35,17 +41,21 @@ const Footer = () => {
               color: "#787878",
             }}
           >
-            Sentuo Oil Refinery, 4th Floor -Room number 409-410
+            Office No 409, Plot 66 / 11, Industrial Area ,Tema.{" "}
           </Typography>
 
           <Typography
+            component="a"
+            href="tel:+233264930920"
             sx={{
               fontSize: 12,
               fontWeight: 500,
               color: "#787878",
+              textDecoration: "none",
+              "&:hover": { textDecoration: "underline", cursor: "pointer" },
             }}
           >
-            Call Us On 0264930920
+            Call Us On (+233) 026 493 0920
           </Typography>
         </div>
 
