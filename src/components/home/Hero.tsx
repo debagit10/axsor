@@ -7,7 +7,6 @@ interface Hero {
   acf: {
     title: string;
     sub_title: string;
-    image: number | { id: number; url: string; alt: string };
   };
 }
 
@@ -22,22 +21,7 @@ const Hero = () => {
         );
         const data = await res.json();
 
-        // Since API returns an array with one object, get the first item
         const hero = Array.isArray(data) ? data[0] : data;
-
-        // Fetch image URL if it's an ID
-        if (hero.acf?.image && typeof hero.acf.image === "number") {
-          const imgRes = await fetch(
-            `https://axsor-f6fd39.ingress-alpha.ewp.live/wp-json/wp/v2/media/${hero.acf.image}`
-          );
-          const imgData = await imgRes.json();
-
-          hero.acf.image = {
-            id: hero.acf.image,
-            url: imgData.source_url,
-            alt: imgData.alt_text || hero.acf.title,
-          };
-        }
 
         setHero(hero);
       } catch (error) {
@@ -47,6 +31,8 @@ const Hero = () => {
 
     fetchHero();
   }, []);
+
+  console.log(hero);
 
   return (
     <div className="relative w-full min-h-screen bg-[url('/home.jpg')] bg-cover bg-center bg-no-repeat">
@@ -73,8 +59,8 @@ const Hero = () => {
             lineHeight: 1.2,
             wordBreak: "break-word",
             overflowWrap: "break-word",
-            whiteSpace: "normal", // ✅ ensures text wraps naturally
-            maxWidth: "90%", // ✅ prevents overflowing text
+            whiteSpace: "normal",
+            maxWidth: "90%",
           }}
         >
           {hero?.acf.title}
