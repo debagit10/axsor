@@ -5,8 +5,38 @@ import Footer from "../components/Footer";
 import mail from "../icons/mail.png";
 import phone from "../icons/phone.png";
 import location from "../icons/location.png";
+import { useState, useEffect } from "react";
+
+interface Contact {
+  id: number;
+  acf: {
+    phone: string;
+    email: string;
+  };
+}
 
 const Contact = () => {
+  const [contact, setContact] = useState<Contact>();
+
+  useEffect(() => {
+    const fetchHero = async () => {
+      try {
+        const res = await fetch(
+          "https://axsor-f6fd39.ingress-alpha.ewp.live/wp-json/wp/v2/contact-info"
+        );
+        const data = await res.json();
+
+        const contact = Array.isArray(data) ? data[0] : data;
+
+        setContact(contact);
+      } catch (error) {
+        console.error("Error fetching hero section:", error);
+      }
+    };
+
+    fetchHero();
+  }, []);
+
   return (
     <div>
       <Hero />
@@ -27,7 +57,7 @@ const Contact = () => {
           </Typography>
           <Typography
             component="a"
-            href="mailto:info@axsorenergy.com"
+            href={`mailto:${contact?.acf.email}`}
             target="_blank"
             rel="noopener noreferrer"
             sx={{
@@ -60,7 +90,7 @@ const Contact = () => {
 
           <Typography
             component="a"
-            href="tel:+233264930920"
+            href={`tel:${contact?.acf.phone}`}
             sx={{
               fontSize: 14,
               fontWeight: 400,
@@ -71,7 +101,7 @@ const Contact = () => {
               "&:hover": { textDecoration: "underline", cursor: "pointer" },
             }}
           >
-            (+233) 026 493 0920
+            {`${contact?.acf.phone}`}
           </Typography>
         </div>
 
