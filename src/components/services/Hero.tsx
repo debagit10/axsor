@@ -52,41 +52,43 @@ const Hero = () => {
           animate={{ opacity: hero ? 1 : 0, y: hero ? 0 : 20 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <Typography
-            sx={{
-              fontSize: {
-                xs: "clamp(2rem, 6vw, 4rem)",
-                md: "clamp(3rem, 6vw, 5rem)",
-                lg: "clamp(4rem, 5vw, 6rem)",
-              },
-              fontWeight: 400,
-              color: "#FFFFFF",
-              letterSpacing: -1,
-              lineHeight: 1.2,
-              wordBreak: "break-word",
-              overflowWrap: "break-word",
-              whiteSpace: "normal",
-              maxWidth: "90%",
-            }}
-          >
-            {hero?.acf.title}
-          </Typography>
+          <div className="flex flex-col gap-[30px]">
+            <Typography
+              sx={{
+                fontSize: {
+                  xs: "clamp(2rem, 6vw, 4rem)",
+                  md: "clamp(3rem, 6vw, 5rem)",
+                  lg: "clamp(4rem, 5vw, 6rem)",
+                },
+                fontWeight: 400,
+                color: "#FFFFFF",
+                letterSpacing: -1,
+                lineHeight: 1.2,
+                wordBreak: "break-word",
+                overflowWrap: "break-word",
+                whiteSpace: "normal",
+                maxWidth: "90%",
+              }}
+            >
+              {hero?.acf.title}
+            </Typography>
 
-          <Typography
-            sx={{
-              fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
-              fontWeight: 400,
-              color: "#FFFFFF",
-              letterSpacing: 0.5,
-              lineHeight: 1.6,
-              wordBreak: "break-word",
-              overflowWrap: "break-word",
-              whiteSpace: "normal",
-              maxWidth: "90%",
-            }}
-          >
-            {hero?.acf.sub_title}
-          </Typography>
+            <Typography
+              sx={{
+                fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                fontWeight: 400,
+                color: "#FFFFFF",
+                letterSpacing: 0.5,
+                lineHeight: 1.6,
+                wordBreak: "break-word",
+                overflowWrap: "break-word",
+                whiteSpace: "normal",
+                maxWidth: "90%",
+              }}
+            >
+              {hero?.acf.sub_title}
+            </Typography>
+          </div>
         </motion.div>
       </div>
     </div>
