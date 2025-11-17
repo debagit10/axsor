@@ -12,11 +12,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const route = location.pathname;
-
-  console.log(route);
+  const scrollTo = location.state?.scrollTo;
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50  bg-[#FFFFFF0D]/24 backdrop-blur-md">
+    <div className="fixed top-0 left-0 w-full z-[9999]  bg-[#FFFFFF0D]/24 backdrop-blur-md">
       <div className="px-[8%] pt-6 text-[#D3D2CE]">
         <div className="flex  items-center justify-between ">
           <img
@@ -34,14 +33,18 @@ const Navbar = () => {
               <Typography
                 fontSize={12}
                 fontWeight={400}
-                color="#FFFFFF"
+                color={scrollTo === "about" ? "#E8AF4B" : "#FFFFFF"}
                 letterSpacing={3}
               >
                 ABOUT US
               </Typography>
 
-              <span className="absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2"></span>
+              <span
+                className={`absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2
+    ${scrollTo === "about" ? "w-full -translate-x-1/2" : ""}`}
+              ></span>
             </li>
+
             <li
               className="relative group cursor-pointer"
               onClick={() => navigate("/services")}
@@ -73,19 +76,22 @@ const Navbar = () => {
               <span className="absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2"></span>
             </li>
             <li
-              className="relative group cursor-pointer tracking-[18%]"
+              className="relative group cursor-pointer"
               onClick={() => navigate("/", { state: { scrollTo: "blog" } })}
             >
               <Typography
                 fontSize={12}
                 fontWeight={400}
-                color="#FFFFFF"
+                color={scrollTo === "blog" ? "#E8AF4B" : "#FFFFFF"}
                 letterSpacing={3}
               >
-                NEWS & UPDATE
+                NEWS & UPDATES
               </Typography>
 
-              <span className="absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2"></span>
+              <span
+                className={`absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2
+    ${scrollTo === "blog" ? "w-full -translate-x-1/2" : ""}`}
+              ></span>
             </li>
           </ul>
 

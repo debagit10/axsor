@@ -56,7 +56,7 @@ const About = () => {
             <div
               key={i}
               className={`text-lg font-medium transition-colors duration-300 ${
-                activeIndex === i ? "text-[#0000FF] font-semibold" : "#000000"
+                activeIndex === i ? "text-white font-semibold" : "#000000"
               }`}
             >
               <Typography>{text}</Typography>

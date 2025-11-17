@@ -33,15 +33,13 @@ const Hero = () => {
     fetchHero();
   }, []);
 
-  console.log(hero);
-
   return (
     <div className="relative w-full min-h-screen bg-[url('/services.jpg')] bg-cover bg-center bg-no-repeat">
       {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-b from-[#00000010] to-[#00000066]" />
 
       {/* Navbar */}
-      <div className="relative z-10">
+      <div className="relative">
         <Navbar />
       </div>
 
