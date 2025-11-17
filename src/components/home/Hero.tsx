@@ -60,11 +60,16 @@ const Hero = () => {
                 },
                 fontWeight: 400,
                 color: "#FFFFFF",
-                letterSpacing: "-0.5%",
-                lineHeight: "110%",
-                wordBreak: "normal",
-                overflowWrap: "normal",
+
+                // FIXES
+                letterSpacing: "-0.5px", // instead of -3%
+                lineHeight: "1.15", // better vertical spacing
                 whiteSpace: "normal",
+
+                // Remove these unless you REALLY need them
+                // wordBreak: "break-word",
+                // overflowWrap: "break-word",
+
                 maxWidth: "90%",
               }}
             >
