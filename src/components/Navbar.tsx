@@ -15,7 +15,7 @@ const Navbar = () => {
   const scrollTo = location.state?.scrollTo;
 
   return (
-    <div className="fixed top-0 left-0 w-full z-[9999]  bg-[#FFFFFF0D]/24 backdrop-blur-md">
+    <div className="fixed top-0 left-0 w-full z-9999  bg-[#FFFFFF0D]/24 backdrop-blur-md">
       <div className="px-[8%] pt-6 text-[#D3D2CE]">
         <div className="flex  items-center justify-between ">
           <img
