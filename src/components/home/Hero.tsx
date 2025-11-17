@@ -38,15 +38,13 @@ const Hero = () => {
   return (
     <div className="relative w-full min-h-screen bg-[url('/home.jpg')] bg-cover bg-center bg-no-repeat">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-b from-[#00000066] to-[#000000]" />
-
+      <div className="absolute inset-0 bg-linear-to-b from-[#00000010] to-[#00000066]" />{" "}
       {/* Navbar */}
-      <div className="relative z-10">
+      <div className="relative">
         <Navbar />
       </div>
-
       {/* Content */}
-      <div className="relative flex w-full max-w-[1120px] z-10 flex-col gap-[30px] px-[6%] md:pl-[8%] pt-[70%] sm:pt-[50%] md:pt-[15%] lg:pt-[10%]">
+      <div className="relative flex w-full max-w-[1120px] z-10 flex-col gap-[30px] px-[6%] md:pl-[8%] pt-[70%] sm:pt-[50%] md:pt-[15%] lg:pt-[15%]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: hero ? 1 : 0, y: hero ? 0 : 20 }}
@@ -62,8 +60,8 @@ const Hero = () => {
                 },
                 fontWeight: 400,
                 color: "#FFFFFF",
-                letterSpacing: -1,
-                lineHeight: 1.2,
+                letterSpacing: "-3%",
+                lineHeight: "100%",
                 wordBreak: "break-word",
                 overflowWrap: "break-word",
                 whiteSpace: "normal",
@@ -78,8 +76,8 @@ const Hero = () => {
                 fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
                 fontWeight: 400,
                 color: "#FFFFFF",
-                letterSpacing: 0.5,
-                lineHeight: 1.6,
+                letterSpacing: "-2.5%",
+                lineHeight: "165%",
                 wordBreak: "break-word",
                 overflowWrap: "break-word",
                 whiteSpace: "normal",

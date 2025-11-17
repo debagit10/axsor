@@ -8,7 +8,7 @@ interface Leader {
     name: string;
     role: string;
     about: string;
-    image: number | { id: number; url: string; alt: string };
+    image: { url: string };
   };
 }
 
@@ -18,13 +18,13 @@ const LeadershipModal: React.FC<Leader> = ({ acf }) => {
   return (
     <div>
       <div
-        className="md:relative flex md:flex-col sm:gap-[5px] md:gap-0 w-full md:h-[454px] rounded-[20px]"
+        className="md:relative flex md:flex-col sm:gap-0.5 md:gap-0 w-[357px] md:h-[454px] rounded-[20px] md:bg-[#00000006]"
         onClick={() => setOpen(true)}
       >
         <img
-          src={typeof acf.image === "object" ? acf.image.url : ""}
+          src={acf.image.url ? acf.image.url : "/user.png"}
           alt={acf.name}
-          className="w-[199px] h-[215px] md:w-full md:h-full object-cover rounded-[20px] bg-[#00000006]"
+          className="w-[120px] h-[120px] md:w-[200px] md:h-[200px] object-cover rounded-[20px] absolute left-[55%] mt-8 md:mt-0 md:top-[30%] md:left-[23%] bg-[#00000006] md:bg-transparent"
         />
         <div className="rounded-2xl flex flex-col gap-3.5 md:absolute md:bottom-0 bg-[#ffffff] md:w-full p-4 w-36 h-[177px] md:h-[113px] mt-4 md:mt-0 ml-[5px] md:m-0">
           <Typography
@@ -72,15 +72,15 @@ const LeadershipModal: React.FC<Leader> = ({ acf }) => {
             </div>
 
             <div
-              className="relative md:float-left md:w-[250px] md:h-[350px] w-full h-auto rounded-[20px] overflow-hidden md:mr-6 mb-4 bg-[#00000006] p-2"
+              className="relative md:float-left md:w-[250px] md:h-[350px] w-full h-[200px]  rounded-[20px] overflow-hidden md:mr-6 mb-4 p-2"
               style={{
                 minWidth: 0,
               }}
             >
               <img
-                src={typeof acf.image === "object" ? acf.image.url : ""}
+                src={acf.image.url ? acf.image.url : "/user.png"}
                 alt={acf.name}
-                className="h-[300px] w-full md:h-full object-cover rounded-[20px]"
+                className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] object-cover rounded-[20px]  bg-[#00000006] "
               />
 
               <div className="absolute bottom-0 left-0 right-0 bg-white p-4 rounded-t-[20px]">

@@ -46,7 +46,9 @@ const Services = () => {
 
       <Our_Services />
 
-      <div className="bg-[#F9F9F9]">
+      <div className="relative w-full bg-[url('/bg_home.jpg')] bg-cover  bg-no-repeat">
+        <div className="absolute inset-0 bg-[#F9F9F9] mix-blend-multiply opacity-70"></div>
+
         <div className="relative z-10 flex flex-col gap-3 px-[6%] md:pl-[8%] pt-[10%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
           <div className="flex flex-col gap-6">
             <Typography
@@ -108,48 +110,52 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-16 px-[6%] md:pl-[8%] pt-[10%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
-        <div className="flex flex-col gap-6">
-          <Typography
-            sx={{
-              fontSize: { xs: 32, sm: 40, md: 64 },
-              fontWeight: 400,
-              color: "black",
-            }}
-          >
-            Why Choose Axsor
-          </Typography>
+      <div className="relative w-full bg-[url('/bg_home.jpg')] bg-cover  bg-no-repeat">
+        <div className="absolute inset-0 bg-[#F9F9F9] mix-blend-multiply opacity-70"></div>
 
-          <Typography
-            sx={{
-              fontSize: { xs: 14, sm: 16, md: 20 },
-              fontWeight: 400,
-              color: "#787878",
-            }}
-          >
-            Our process ensures efficiency, transparency, <br /> and trust at
-            every step.
-          </Typography>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
-          {reasons.map((reason, index) => (
-            <div
-              key={index}
-              className="bg-[#00000005] rounded-2xl p-6 flex items-center justify-center h-[220px]"
+        <div className="flex flex-col gap-16 px-[6%] md:pl-[8%] pt-[10%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
+          <div className="flex flex-col gap-6">
+            <Typography
+              sx={{
+                fontSize: { xs: 32, sm: 40, md: 64 },
+                fontWeight: 400,
+                color: "black",
+              }}
             >
-              <Typography
-                sx={{
-                  fontSize: { xs: 22, sm: 24, md: 28 },
-                  fontWeight: 400,
-                  color: "#666666",
-                  textAlign: "center",
-                }}
+              Why Choose Axsor
+            </Typography>
+
+            <Typography
+              sx={{
+                fontSize: { xs: 14, sm: 16, md: 20 },
+                fontWeight: 400,
+                color: "#787878",
+              }}
+            >
+              Our process ensures efficiency, transparency, <br /> and trust at
+              every step.
+            </Typography>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
+            {reasons.map((reason, index) => (
+              <div
+                key={index}
+                className="bg-[#00000005] rounded-2xl p-6 flex items-center justify-center h-[220px]"
               >
-                {reason.acf.reason}
-              </Typography>
-            </div>
-          ))}
+                <Typography
+                  sx={{
+                    fontSize: { xs: 22, sm: 24, md: 28 },
+                    fontWeight: 400,
+                    color: "#666666",
+                    textAlign: "center",
+                  }}
+                >
+                  {reason.acf.reason}
+                </Typography>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

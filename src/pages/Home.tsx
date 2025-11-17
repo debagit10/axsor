@@ -30,10 +30,6 @@ const Home = () => {
         <About />
       </div>
 
-      <Values />
-
-      <Services />
-
       <div className="relative flex flex-col justify-center w-full h-[558px] md:h-[770px]  bg-[url('/commitment.jpg')] bg-cover bg-center bg-no-repeat">
         {/* Overlay */}
         <div className="absolute inset-0 bg-linear-to-t from-[#00000066] to-[#000000]" />
@@ -72,6 +68,10 @@ const Home = () => {
         </div>
       </div>
 
+      <Values />
+
+      <Services />
+
       <Leadership />
 
       <div id="blog">
@@ -80,7 +80,7 @@ const Home = () => {
 
       <div
         id="careers"
-        className="relative flex flex-col  w-full h-[418px] md:h-[770px] bg-[url('/footer.png')] bg-cover bg-center bg-no-repeat mt-[10%]"
+        className="relative flex flex-col  w-full h-[418px] md:h-[770px] bg-[url('/footer.png')] bg-cover bg-center bg-no-repeat "
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-linear-to-b from-[#00000066] to-[#000000]" />

@@ -8,7 +8,7 @@ interface Leader {
     name: string;
     role: string;
     about: string;
-    image: number | { id: number; url: string; alt: string };
+    image: { url: string };
   };
 }
 
@@ -46,38 +46,46 @@ const Leadership = () => {
   }, []);
 
   return (
-    <div className="bg-[#F8F8F6] px-[6%] py-[5%] md:pl-[8%]">
-      <div className="md:px-[5%]">
-        {/* Header */}
-        <div className="flex flex-col gap-6">
-          <Typography
-            sx={{
-              fontSize: { xs: 32, sm: 40, md: 64 },
-              fontWeight: 400,
-              color: "#000000",
-            }}
-          >
-            Leadership
-          </Typography>
-          <Typography
-            sx={{
-              fontSize: 16,
-              fontWeight: 400,
-              color: "#787878",
-            }}
-          >
-            Axsor's leadership comprises personnel with a vision for innovation{" "}
-            <br />
-            and growth, ensuring reliability, trust, and value in every
-            operation.
-          </Typography>
-        </div>
+    <div className="relative w-full bg-[url('/bg_home.jpg')] bg-cover  bg-no-repeat">
+      <div className="absolute inset-0 bg-[#F8F8F6] mix-blend-multiply opacity-70"></div>
 
-        {/* Leaders */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
-          {leaders.map((leader) => (
-            <LeadershipModal key={leader.id} id={leader.id} acf={leader.acf} />
-          ))}
+      <div className=" px-[6%] py-[5%] md:pl-[8%]">
+        <div className="md:px-[5%]">
+          {/* Header */}
+          <div className="flex flex-col gap-6">
+            <Typography
+              sx={{
+                fontSize: { xs: 32, sm: 40, md: 64 },
+                fontWeight: 600,
+                color: "#000000",
+              }}
+            >
+              Leadership
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: 16,
+                fontWeight: 400,
+                color: "#787878",
+              }}
+            >
+              Axsor's leadership comprises personnel with a vision for
+              innovation <br />
+              and growth, ensuring reliability, trust, and value in every
+              operation.
+            </Typography>
+          </div>
+
+          {/* Leaders */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
+            {leaders.map((leader) => (
+              <LeadershipModal
+                key={leader.id}
+                id={leader.id}
+                acf={leader.acf}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

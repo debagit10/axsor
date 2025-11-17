@@ -279,7 +279,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="pb-12">
+      <div>
         <Blog />
       </div>
 

@@ -45,17 +45,18 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-[#000000]">
-      <div className="flex flex-col md:flex-row gap-8 p-8 px-[6%] md:pl-[8%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
+    <div className="relative w-full bg-[url('/bg_home.jpg')] bg-cover bg-no-repeat">
+      <div className="absolute inset-0 bg-[#D8B94A] mix-blend-multiply opacity-70"></div>
+      {/* <div className="absolute inset-0 bg-[#D8B94A] opacity-70"></div> */}
+
+      <div className="relative z-10 flex flex-col md:flex-row gap-8 p-8 px-[6%] md:pl-[8%] md:pt-[15%] lg:pt-[10%] max-w-[1400px] mx-auto">
         {/* Left Section */}
         <div className="md:w-1/3 space-y-36 sticky top-8 self-start hidden md:block">
           {texts.map((text, i) => (
             <div
               key={i}
               className={`text-lg font-medium transition-colors duration-300 ${
-                activeIndex === i
-                  ? "text-blue-600 font-semibold"
-                  : "text-gray-500"
+                activeIndex === i ? "text-[#0000FF] font-semibold" : "#000000"
               }`}
             >
               <Typography>{text}</Typography>
@@ -64,7 +65,7 @@ const About = () => {
         </div>
 
         {/* Right Section */}
-        <div className="md:w-2/3 space-y-[25%] md:space-y-[50%]  scroll-smooth overflow-hidden">
+        <div className="md:w-2/3 space-y-[25%] md:space-y-[50%] scroll-smooth overflow-hidden">
           {paragraphs.map((para, i) => (
             <div
               key={i}
@@ -92,7 +93,7 @@ const About = () => {
                 sx={{
                   fontSize: { xs: 16, md: 32 },
                   fontWeight: 400,
-                  color: activeIndex === i ? "white" : "#737373",
+                  color: activeIndex === i ? "#000000" : "#737373",
                   letterSpacing: "-2.5%",
                   lineHeight: "180%",
                 }}
