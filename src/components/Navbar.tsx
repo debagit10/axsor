@@ -15,8 +15,8 @@ const Navbar = () => {
   const scrollTo = location.state?.scrollTo;
 
   return (
-    <div className="fixed top-0 left-0 w-full z-9999  bg-[#FFFFFF0D]/24 backdrop-blur-md">
-      <div className="px-[8%] pt-6 text-[#D3D2CE]">
+    <div className="fixed top-0 left-0 md:m-4 md:w-[98%] w-full md:rounded-[20px] z-9999 bg-black/60 backdrop-blur-lg ">
+      <div className="px-[8%] text-[#D3D2CE]">
         <div className="flex  items-center justify-between ">
           <img
             src="/logo.png"
@@ -32,7 +32,7 @@ const Navbar = () => {
             >
               <Typography
                 fontSize={12}
-                fontWeight={400}
+                fontWeight={600}
                 color={scrollTo === "about" ? "#E8AF4B" : "#FFFFFF"}
                 letterSpacing={3}
               >
@@ -40,7 +40,7 @@ const Navbar = () => {
               </Typography>
 
               <span
-                className={`absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2
+                className={`absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-[#E8AF4B] transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2
     ${scrollTo === "about" ? "w-full -translate-x-1/2" : ""}`}
               ></span>
             </li>
@@ -51,14 +51,17 @@ const Navbar = () => {
             >
               <Typography
                 fontSize={12}
-                fontWeight={400}
+                fontWeight={600}
                 color={route === "/services" ? "#E8AF4B" : "#FFFFFF"}
                 letterSpacing={3}
               >
                 SERVICES
               </Typography>
 
-              <span className="absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2"></span>
+              <span
+                className={`absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-[#E8AF4B] transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2
+    ${route === "/services" ? "w-full -translate-x-1/2" : ""}`}
+              ></span>
             </li>
             <li
               className="relative group cursor-pointer"
@@ -66,14 +69,17 @@ const Navbar = () => {
             >
               <Typography
                 fontSize={12}
-                fontWeight={400}
+                fontWeight={600}
                 color={route === "/contact" ? "#E8AF4B" : "#FFFFFF"}
                 letterSpacing={3}
               >
                 CONTACT US
               </Typography>
 
-              <span className="absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2"></span>
+              <span
+                className={`absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-[#E8AF4B] transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2
+    ${route === "/contact" ? "w-full -translate-x-1/2" : ""}`}
+              ></span>
             </li>
             <li
               className="relative group cursor-pointer"
@@ -81,7 +87,7 @@ const Navbar = () => {
             >
               <Typography
                 fontSize={12}
-                fontWeight={400}
+                fontWeight={600}
                 color={scrollTo === "blog" ? "#E8AF4B" : "#FFFFFF"}
                 letterSpacing={3}
               >
@@ -89,7 +95,7 @@ const Navbar = () => {
               </Typography>
 
               <span
-                className={`absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2
+                className={`absolute -bottom-[5px] left-1/2 w-0 h-0.5 bg-[#E8AF4B] transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2
     ${scrollTo === "blog" ? "w-full -translate-x-1/2" : ""}`}
               ></span>
             </li>
@@ -113,7 +119,7 @@ const Navbar = () => {
               >
                 <Typography
                   fontSize={12}
-                  fontWeight={400}
+                  fontWeight={600}
                   color="#FFFFFF"
                   letterSpacing={3}
                 >
@@ -123,7 +129,7 @@ const Navbar = () => {
               <li onClick={() => navigate("/services")}>
                 <Typography
                   fontSize={12}
-                  fontWeight={400}
+                  fontWeight={600}
                   color="#FFFFFF"
                   letterSpacing={3}
                 >
@@ -133,7 +139,7 @@ const Navbar = () => {
               <li onClick={() => navigate("/contact")}>
                 <Typography
                   fontSize={12}
-                  fontWeight={400}
+                  fontWeight={600}
                   color="#FFFFFF"
                   letterSpacing={3}
                 >
@@ -146,7 +152,7 @@ const Navbar = () => {
               >
                 <Typography
                   fontSize={12}
-                  fontWeight={400}
+                  fontWeight={600}
                   color="#FFFFFF"
                   letterSpacing={3}
                 >
