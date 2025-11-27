@@ -66,7 +66,7 @@ const Blog = () => {
     <div className="relative w-full bg-[url('/bg_home.jpg')] bg-cover  bg-no-repeat">
       <div className="absolute inset-0 bg-[#FFFFFF] mix-blend-multiply opacity-70"></div>
 
-      <div className="px-[6%] py-[5%] md:pl-[8%]">
+      <div className="px-[6%] md:py-[8%] py-[20%] md:pl-[8%]">
         <div className="md:px-[5%]">
           {/* Header */}
           <div className="flex flex-col gap-6">
