@@ -21,7 +21,7 @@ const Navbar = () => {
           <img
             src="/logo.png"
             alt="Axsor's Logo"
-            className="w-10 h-8 md:w-32 md:h-[100px] cursor-pointer"
+            className="w-28 h-[100px] md:w-32 md:h-[100px] cursor-pointer"
             onClick={() => navigate("/")}
           />
 
