@@ -48,7 +48,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: hero ? 1 : 0, y: hero ? 0 : 20 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="flex flex-col gap-[30px]">
             <Typography
@@ -61,14 +61,9 @@ const Hero = () => {
                 fontWeight: 400,
                 color: "#FFFFFF",
 
-                // FIXES
-                letterSpacing: "-0.5px", // instead of -3%
-                lineHeight: "1.15", // better vertical spacing
+                letterSpacing: "-0.5px",
+                lineHeight: "1.15",
                 whiteSpace: "normal",
-
-                // Remove these unless you REALLY need them
-                // wordBreak: "break-word",
-                // overflowWrap: "break-word",
 
                 maxWidth: "90%",
               }}

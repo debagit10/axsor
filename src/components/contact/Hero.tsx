@@ -48,7 +48,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: hero ? 1 : 0, y: hero ? 0 : 20 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="flex flex-col gap-[30px]">
             <Typography
