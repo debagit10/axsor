@@ -86,9 +86,9 @@ const Blog = () => {
                 color: "#787878",
               }}
             >
-              Axsor's leadership combines of personnels with a vision for
-              innovation and growth, ensuring reliability, trust, and value in
-              every operation.
+              Explore strategic insights and official updates from Axsor Energy.
+              Stay informed on our projects, partnerships, and industry
+              developments.
             </Typography>
           </div>
 
