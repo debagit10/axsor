@@ -68,7 +68,8 @@ const Hero = () => {
                 maxWidth: "90%",
               }}
             >
-              {hero?.acf.title}
+              Reliable Energy Powered by Axsor Energy
+              {/* {hero?.acf.title} */}
             </Typography>
 
             <Typography
@@ -84,7 +85,9 @@ const Hero = () => {
                 maxWidth: "90%",
               }}
             >
-              {hero?.acf.sub_title}
+              Axsor Energy delivers reliable fuel solutions across Ghana and
+              beyond.
+              {/* {hero?.acf.sub_title} */}
             </Typography>
           </div>
         </motion.div>

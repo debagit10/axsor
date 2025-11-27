@@ -73,7 +73,8 @@ const Hero = () => {
                 maxWidth: "90%",
               }}
             >
-              {hero?.acf.title}
+              Building a stronger nation through trusted energy
+              {/* {hero?.acf.title} */}
             </Typography>
 
             <Typography
@@ -89,7 +90,9 @@ const Hero = () => {
                 maxWidth: "90%",
               }}
             >
-              {hero?.acf.sub_title}
+              Fueling Industries, Powering communities, and driving progress
+              across Ghana and beyond.
+              {/* {hero?.acf.sub_title} */}
             </Typography>
           </div>
         </motion.div>

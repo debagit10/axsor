@@ -68,7 +68,8 @@ const Hero = () => {
                 maxWidth: "90%",
               }}
             >
-              {hero?.acf.title}
+              Get in touch with Axsor Energy
+              {/* {hero?.acf.title} */}
             </Typography>
 
             <Typography
@@ -84,7 +85,9 @@ const Hero = () => {
                 maxWidth: "90%",
               }}
             >
-              {hero?.acf.sub_title}
+              We’re here to answer questions, explore partnerships, and support
+              your needs. Contact our team today.
+              {/* {hero?.acf.sub_title} */}
             </Typography>
           </div>
         </motion.div>
