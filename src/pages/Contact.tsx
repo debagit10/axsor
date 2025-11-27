@@ -163,7 +163,7 @@ const Contact = () => {
       </div>
 
       <div className="flex md:gap-40 gap-20 justify-center flex-col md:flex-row py-12 w-full h-[928px] bg-[url('/message.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="flex flex-col gap-6 pt-[10%] mx-auto md:mx-0">
+        <div className="flex flex-col gap-6 pt-[10%] mx-4">
           <Typography
             sx={{
               fontSize: { xs: 32, md: 64 },
@@ -185,9 +185,10 @@ const Contact = () => {
               lineHeight: "165%",
             }}
           >
-            Axsor’s leadership combines of personnels with a <br /> vision for
-            innovation and growth, ensuring reliability, <br /> trust, and value
-            in every operation.
+            Get in touch with our team for inquiries, <br />
+            partnerships, or support. We’re here to provide clear answers and{" "}
+            <br className="md:block hidden" />
+            deliver the reliable service Ax­sor is known for.
           </Typography>
         </div>
 
