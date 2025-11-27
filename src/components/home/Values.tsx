@@ -29,7 +29,8 @@ const Values = () => {
   ];
 
   return (
-    <div className="bg-linear-to-b from-[#D8B94A] to-[#CBB565] md:px-[6%] pt-[10%] pb-[5%] md:pl-[8%] px-[5%]">
+    <div className="relative w-full bg-[url('/bg_home.jpg')] bg-cover bg-no-repeat md:px-[6%] pt-[10%] pb-[5%] md:pl-[8%] px-[5%]">
+      <div className="absolute inset-0 bg-[#D8B94A] mix-blend-multiply opacity-70"></div>
       <div className="md:px-[5%]">
         {/* Header */}
         <div className="flex flex-col gap-6 pl-[6%] md:pl-0">
