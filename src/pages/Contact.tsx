@@ -18,6 +18,23 @@ interface Contact {
 const Contact = () => {
   const [contact, setContact] = useState<Contact>();
 
+  const [message, setMessage] = useState("");
+  //const [name, setName] = useState("");
+  //const [senderEmail, setSenderEmail] = useState("");
+  const [subject, setSubject] = useState("");
+
+  const handleSendMail = () => {
+    const email = "info@axsorenergy.com";
+    const mailsubject = encodeURIComponent(subject);
+    const body = encodeURIComponent(message);
+
+    // Compose mailto URL
+    const mailtoLink = `mailto:${email}?subject=${mailsubject}&body=${body}`;
+
+    // Open mail client
+    window.open(mailtoLink, "_blank");
+  };
+
   useEffect(() => {
     const fetchHero = async () => {
       try {
@@ -178,6 +195,7 @@ const Contact = () => {
           <div className="flex flex-col gap-5">
             <TextField
               placeholder="Enter your name"
+              //onChange={(e) => setName(e.target.value)}
               sx={{
                 "& .MuiInputBase-root": {
                   backgroundColor: "#F2F2F3",
@@ -189,6 +207,7 @@ const Contact = () => {
             />
             <TextField
               placeholder="Enter your email"
+              //onChange={(e) => setSenderEmail(e.target.value)}
               sx={{
                 "& .MuiInputBase-root": {
                   backgroundColor: "#F2F2F3",
@@ -199,6 +218,7 @@ const Contact = () => {
               }}
             />
             <TextField
+              onChange={(e) => setSubject(e.target.value)}
               placeholder="Enter mail subject"
               sx={{
                 "& .MuiInputBase-root": {
@@ -211,6 +231,7 @@ const Contact = () => {
             />
 
             <TextField
+              onChange={(e) => setMessage(e.target.value)}
               placeholder="Write your message"
               multiline
               rows={6}
@@ -228,6 +249,7 @@ const Contact = () => {
 
           <div className="absolute flex justify-center bottom-5">
             <Button
+              onClick={handleSendMail}
               fullWidth
               sx={{
                 height: "54px",
