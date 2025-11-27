@@ -18,24 +18,39 @@ const LeadershipModal: React.FC<Leader> = ({ acf }) => {
   return (
     <div>
       <div
-        className="md:relative flex md:flex-col sm:gap-0.5 md:gap-0 w-[357px] md:h-[454px] rounded-[20px] md:bg-[#00000006]"
+        className="md:relative flex md:flex-col sm:gap-0.5 md:gap-0 w-[357px] md:h-[454px] rounded-[20px] md:bg-[#00000006]
+             transform transition-all duration-300 hover:scale-105 cursor-pointer"
         onClick={() => setOpen(true)}
       >
         <img
           src={acf.image.url ? acf.image.url : "/user.png"}
           alt={acf.name}
-          className="w-[120px] h-[120px] md:w-[200px] md:h-[200px] object-cover rounded-[20px] absolute left-[55%] mt-8 md:mt-0 md:top-[30%] md:left-[23%] bg-[#00000006] md:bg-transparent"
+          className="w-[120px] h-[120px] md:w-[200px] md:h-[200px] object-cover rounded-[20px]
+               absolute left-[55%] mt-8 md:mt-0 md:top-[30%] md:left-[23%]
+               bg-[#00000006] md:bg-transparent"
         />
-        <div className="rounded-2xl flex flex-col gap-3.5 md:absolute md:bottom-0 bg-[#ffffff] md:w-full p-4 w-36 h-[177px] md:h-[113px] mt-4 md:mt-0 ml-[5px] md:m-0">
-          <Typography
-            sx={{
-              fontSize: 24,
-              fontWeight: 500,
-              color: "#787878",
-            }}
-          >
-            {acf.name}
-          </Typography>
+
+        <div
+          className="rounded-2xl flex flex-col gap-3.5 md:absolute md:bottom-0 bg-[#ffffff]
+                  md:w-full p-4 w-36 h-[177px] md:h-[113px] mt-4 md:mt-0 ml-[5px] md:m-0"
+        >
+          <div className="relative group w-fit">
+            <Typography
+              sx={{
+                fontSize: 24,
+                fontWeight: 500,
+                color: "#787878",
+              }}
+            >
+              {acf.name}
+            </Typography>
+
+            <span
+              className="absolute -bottom-[5px] left-0 w-0 h-0.5 bg-[#E8AF4B]
+    transition-all duration-300 group-hover:w-full"
+            ></span>
+          </div>
+
           <Typography
             sx={{
               fontSize: 14,
@@ -59,7 +74,13 @@ const LeadershipModal: React.FC<Leader> = ({ acf }) => {
             width: "80%",
             maxWidth: "1049px",
             borderRadius: "20px",
+            zIndex: 99999,
           },
+          "& .MuiBackdrop-root": {
+            backgroundColor: "rgba(0,0,0,0.7)",
+            zIndex: 99998,
+          },
+          zIndex: 99997,
         }}
       >
         <DialogContent>

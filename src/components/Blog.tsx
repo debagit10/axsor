@@ -97,19 +97,19 @@ const Blog = () => {
               <div
                 onClick={() => window.open(`${item.acf.url}`, "_blank")}
                 key={index}
-                className="relative md:w-full w-[333px] h-[494px] md:h-[454px] bg-[#00000005] rounded-[20px] overflow-hidden mx-auto"
+                className="relative md:w-full w-[333px] h-[494px] md:h-[454px] bg-[#00000005] rounded-[20px] overflow-hidden mx-auto transform transition-all duration-300 hover:scale-105 cursor-pointer"
               >
                 <img
                   src={item.acf.image.url}
                   className="w-full h-full object-cover"
                 />
 
-                <div className="rounded-2xl flex flex-col gap-7 absolute bottom-0 bg-[#00000006] p-4 backdrop-blur-sm">
+                <div className="rounded-2xl flex flex-col gap-7 absolute bottom-0 bg-black/60 backdrop-blur-lg p-4">
                   <Typography
                     sx={{
                       fontSize: 20,
                       fontWeight: 500,
-                      color: "#787878",
+                      color: "white",
                     }}
                   >
                     {item.acf.content.split(" ").slice(0, 10).join(" ") + "..."}
@@ -119,7 +119,7 @@ const Blog = () => {
                     sx={{
                       fontSize: 12,
                       fontWeight: 400,
-                      color: "#000000",
+                      color: "white",
                     }}
                   >
                     {item.acf.read_time}
