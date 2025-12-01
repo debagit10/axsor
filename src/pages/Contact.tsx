@@ -4,8 +4,9 @@ import Hero from "../components/contact/Hero";
 import Footer from "../components/Footer";
 import mail from "../icons/mail.png";
 import phone from "../icons/phone.png";
-import location from "../icons/location.png";
+import location_icon from "../icons/location.png";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 interface Contact {
   id: number;
@@ -34,6 +35,17 @@ const Contact = () => {
     // Open mail client
     window.open(mailtoLink, "_blank");
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const section = document.getElementById(location.state.scrollTo);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   useEffect(() => {
     const fetchHero = async () => {
@@ -123,7 +135,7 @@ const Contact = () => {
         </div>
 
         <div className="rounded-2xl flex flex-col w-[360px] h-[230px] md:p-[2%] p-[4%] bg-[#121212] gap-7 mx-auto md:mx-0">
-          <img className="rounded-[50%] w-14 h-14" src={location} />
+          <img className="rounded-[50%] w-14 h-14" src={location_icon} />
           <Typography
             sx={{
               fontSize: 12,
@@ -162,7 +174,10 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex md:gap-40 gap-20 justify-center flex-col md:flex-row py-12 w-full h-[928px] bg-[url('/message.jpg')] bg-cover bg-center bg-no-repeat">
+      <div
+        id="message"
+        className="flex md:gap-40 gap-20 justify-center flex-col md:flex-row py-12 w-full h-[928px] bg-[url('/message.jpg')] bg-cover bg-center bg-no-repeat"
+      >
         <div className="flex flex-col gap-6 pt-[10%] mx-4">
           <Typography
             sx={{

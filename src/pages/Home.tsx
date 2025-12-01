@@ -116,7 +116,9 @@ const Home = () => {
           </Typography>
 
           <Button
-            onClick={() => navigate("/contact")}
+            onClick={() =>
+              navigate("/contact", { state: { scrollTo: "message" } })
+            }
             sx={{
               marginTop: "1rem",
               width: "203px",
