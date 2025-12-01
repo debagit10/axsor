@@ -5,13 +5,14 @@ import Hero from "../components/home/Hero";
 import Leadership from "../components/home/Leadership";
 import Services from "../components/Services";
 import Values from "../components/home/Values";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import About from "../components/About";
 import quote from "../icons/quotes.png";
 
 const Home = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (location.state?.scrollTo) {
@@ -115,6 +116,7 @@ const Home = () => {
           </Typography>
 
           <Button
+            onClick={() => navigate("/contact")}
             sx={{
               marginTop: "1rem",
               width: "203px",

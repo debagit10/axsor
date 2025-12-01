@@ -140,7 +140,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t-[0.5px] border-[#FFFFFF1F]  ">
+      {/* <div className="border-t-[0.5px] border-[#FFFFFF1F]  ">
         <div className="px-[8%] md:py-[2%] py-[4%] flex md:flex-row flex-col justify-between gap-4 ">
           <div className="flex gap-5 justify-center">
             <Typography
@@ -222,7 +222,7 @@ const Footer = () => {
             </Typography>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="border-t-[0.5px] border-[#FFFFFF1F]">
         <div className="flex justify-center px-[8%] md:py-[2%] py-[4%]  ">
